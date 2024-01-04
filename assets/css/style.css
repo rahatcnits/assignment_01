@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap");
+
+:root {
+  --primary_font: "Josefin Sans";
+  --white: #ffffff;
+  --black: #000000;
+  --navy_blue: #0d2857;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary_font);
+}
+
+/* Hero Start */
+
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/hero_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar-brand img {
+  width: 120px;
+}
+
+.nav-item .nav-link {
+  color: var(--white);
+  font-size: 1em;
+  font-family: var(--primary_font);
+  margin: 0 15px;
+}
+
+.nav-item .nav-link:hover {
+  color: var(--white);
+}
+
+.nav_btn a {
+  text-decoration: none;
+  color: var(--black);
+  font-family: var(--primary_font);
+  font-size: 1em;
+  background-color: var(--white);
+  padding: 10px 30px;
+  border-radius: 6px;
+  font-weight: 500;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  margin-left: 20px;
+}
+
+.hero_content {
+  height: calc(100vh - 108px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero_content h1 {
+  font-size: 5em;
+  color: var(--white);
+}
+
+.hero_content p {
+  font-size: 1.4em;
+  color: var(--white);
+}
+
+@media screen and (max-width: 990px) {
+  .hero_content h1 {
+    font-size: 3.5em;
+  }
+
+  .hero_content p {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .hero_content h1 {
+    font-size: 2.6em;
+  }
+
+  .hero_content p {
+    font-size: 1.1em;
+  }
+}
+
+/* Hero End */
+
+/* Blog Start */
+
+#blog {
+  padding: 80px 0;
+}
+
+.blog_head h1 {
+  text-align: center;
+  font-size: 3em;
+  color: var(--navy_blue);
+  font-weight: 700;
+}
+
+.blog_head p {
+  text-align: center;
+  font-size: 1.1em;
+  color: var(--black);
+  font-weight: 600;
+}
+
+.blog_card {
+  border: 1px solid rgba(1, 52, 184, 0.2);
+  background: var(--white);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  margin-top: 30px;
+}
+
+.blog_card:hover {
+  box-shadow: 5px 5px 15px 2px rgba(1, 52, 184, 0.11);
+}
+
+.blog_card .card_img {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  -ms-border-radius: 10px 10px 0 0;
+  -o-border-radius: 10px 10px 0 0;
+}
+
+.blog_card .card_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card_content {
+  padding: 20px;
+}
+
+.blog_card_title {
+  font-family: var(--primary_font);
+  color: var(--black);
+  font-weight: 700;
+  font-size: 1.4em;
+}
+
+.blog_card_date {
+  font-family: var(--primary_font);
+  color: var(--black);
+  font-weight: 300;
+  font-size: 1em;
+}
+
+.blog_card_desc {
+  font-family: var(--primary_font);
+  color: var(--black);
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+/* Blog End */
+
+/* Footer Start */
+
+#footer {
+  background-color: var(--navy_blue);
+  padding-top: 30px;
+}
+
+.footer_content {
+  margin-top: 50px;
+}
+
+.footer_logo img {
+  width: 180px;
+}
+
+.footer_desc {
+  max-width: 70%;
+  font-family: var(--primary_font);
+  color: var(--white);
+  font-weight: 300;
+  font-size: 1em;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.footer_content h2 {
+  font-family: var(--primary_font);
+  color: var(--white);
+  font-weight: 400;
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+
+.footer_content ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer_content ul li {
+  margin: 20px 0;
+}
+
+.footer_content ul li:last-child {
+  margin: 0;
+}
+
+.footer_content ul a {
+  text-decoration: none;
+  font-family: var(--primary_font);
+  color: var(--white);
+  font-weight: 300;
+  font-size: 1em;
+}
+
+.copyright p {
+  font-family: var(--primary_font);
+  color: var(--white);
+  font-weight: 500;
+  font-size: 1em;
+  text-align: center;
+  padding: 25px 0;
+  border-top: 1px solid var(--white);
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+/* Footer End */
